@@ -26,12 +26,12 @@ if (!tagInput || !tagContainer) {
     // -- Remove a tag via delegation --
     tagContainer.addEventListener('click', function(event) {
         // 1. Check event.target.matches('.tag-remove')
-        //when an element inside of tagContainer is clicked the specific element 
+        //when an element inside of tagContainer has been clicked the specific element 
         //(event.target) is compared using matches if it has the css selector returns true
         const matchResult = event.target.matches('.tag-remove')
         // 2. If true, call closest('.tag').remove() on event.target
         if (matchResult) {
-            event.target.closest('.tag').remove()
+            event.target.closest('.tag').remove();
         } 
 });
 }
