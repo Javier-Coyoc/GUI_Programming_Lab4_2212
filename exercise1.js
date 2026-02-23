@@ -14,9 +14,9 @@ if (!accordion) {
         // 3. Close ALL accordion items (querySelectorAll + forEach + remove class)
         const accordionItems = document.querySelectorAll('.accordion-item')
         accordionItems.forEach(item => {
-            item.classList.remove('open')
+            item.classList.remove('open');
         });
         // 4. Toggle .open on the clicked item only
-        closestItem.classList.toggle('open') 
+        closestItem.classList.toggle('open') ;
     });
 }
